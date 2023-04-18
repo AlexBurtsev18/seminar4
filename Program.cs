@@ -66,7 +66,7 @@
 
 // PrintData("Факториал равен: ",fact);
 
-// Homework. 
+// HOMEWORK. 
 // Task 25++. Напишите цикл, который принимает на вход два числа (A и B) и возводит число A в натуральную степень B.
 
 // double Compare(double A, double B)
@@ -80,3 +80,48 @@
 // double B = Convert.ToDouble(Console.ReadLine());
 // double result = Compare(A, B);
 // Console.WriteLine($"Число {A} в степени {B} составляет {result}");
+
+// Task 27+. Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
+
+// int SumDigits(int num)
+// {
+//     int hundreds = num / 100;
+//     int decades = (num / 10) % 10;
+//     int unites = num % 10;
+//     int sep = hundreds + decades + unites;
+//     return sep;
+// }
+// Console.Write("Input your number: ");
+// int num = Convert.ToInt32(Console.ReadLine());
+// int result = SumDigits(num);
+// Console.WriteLine($"If separate number {num} and sum digits, we`re got {result}");
+
+
+// Task 29. Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
+
+void FillArray(int[] collection)
+{
+    int length = collection.Length;
+    int index = 0;
+    while(index < length)
+    {
+        collection[index] = new Random().Next(1,10);
+        index++;
+    }
+}
+
+void PrintArray(int[] col)
+{
+    int count = col.Length;
+    int position = 0;
+    while (position<count)
+    {
+        Console.WriteLine(col[position]);
+        position++;
+    }
+}
+
+int[] array = new int[8];
+
+FillArray(array);
+PrintArray(array);
