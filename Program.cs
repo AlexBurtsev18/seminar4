@@ -1,18 +1,18 @@
 ﻿// Task 1. Напишите программу, которая принимает на вход число (А) и выдаёт сумму чисел от 1 до А.
 
-int Sum(int n)
-{
-    int summa = 0;
-    for(int count = 1; count<=n; count++)
-    {
-        summa = summa + count;
-    }
-    return summa;
-}
-Console.WriteLine("Input number: ");
-int num = Convert.ToInt32(Console.ReadLine());
-int res = Sum(num);
-Console.WriteLine($"Введенное число {num}, Сумма {res}");
+// int Sum(int n)
+// {
+//     int summa = 0;
+//     for(int count = 1; count<=n; count++)
+//     {
+//         summa = summa + count;
+//     }
+//     return summa;
+// }
+// Console.WriteLine("Input number: ");
+// int num = Convert.ToInt32(Console.ReadLine());
+// int res = Sum(num);
+// Console.WriteLine($"Введенное число {num}, Сумма {res}");
 
 // Task 2. Напишите программу, которая принимает на вход число N и выдаёт произведение чисел от 1 до N.
 
@@ -65,3 +65,18 @@ Console.WriteLine($"Введенное число {num}, Сумма {res}");
 // BigInteger fact = CalcFact(number);
 
 // PrintData("Факториал равен: ",fact);
+
+// Homework. 
+// Task 25++. Напишите цикл, который принимает на вход два числа (A и B) и возводит число A в натуральную степень B.
+
+// double Compare(double A, double B)
+// {
+//     double res = Math.Pow(A, B);
+//     return res;
+// }
+// Console.WriteLine("Imput number A: ");
+// double A = Convert.ToDouble(Console.ReadLine());
+// Console.WriteLine("Imput number B: ");
+// double B = Convert.ToDouble(Console.ReadLine());
+// double result = Compare(A, B);
+// Console.WriteLine($"Число {A} в степени {B} составляет {result}");
